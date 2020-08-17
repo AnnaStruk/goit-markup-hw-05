@@ -103,8 +103,7 @@ img {
   padding-bottom: 32px;
   color: var(--title-text-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -172,7 +171,7 @@ img {
   justify-content: center;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-icon {
@@ -425,8 +424,8 @@ img {
   align-items: center;
   color: #afb1b8;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -470,8 +469,8 @@ img {
   border-radius: 4px;
   fill: #afb1b8;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -556,8 +555,7 @@ img {
   align-items: center;
   border-radius: 50%;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social:hover,
@@ -579,19 +577,21 @@ img {
 }
 
 .input-mail {
+  box-sizing: border-box;
   margin-right: 12px;
   width: 358px;
   height: 50px;
   padding: 15px;
-  border: 1px solid var(--accent-secondary-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: inherit;
+
   font-style: normal;
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
+
+  border: 1px solid var(--accent-secondary-color);
+  border-radius: 4px;
   color: var(--accent-secondary-color);
+  background-color: inherit;
 }
 
 /* Portfolio Button */
