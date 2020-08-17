@@ -8,14 +8,6 @@
   --footer-bg-color: #2f303a;
 }
 
-/* main text color #757575 */
-/* secondary text color #212121 */
-/* white color #FFFFFF */
-/* accent color #2196F3 */
-/* secondary background color #F5F4FA */
-/* footer background color #2F303A */
-/*contacts color: rgba(255, 255, 255, 0.6) */
-
 body {
   margin: 0;
   background-color: var(--white-color);
@@ -117,6 +109,28 @@ img {
   color: var(--accent-color);
 }
 
+.site-nav .item {
+  position: relative;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.item .current:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Contacts */
 .contacts .link {
   color: var(--primary-text-color);
@@ -146,10 +160,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
 }
 
 .btn-mail,
@@ -232,6 +242,14 @@ img {
 
 .hero-button {
   padding: 10px 32px;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
 }
 
 /* Features */
@@ -575,6 +593,10 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.page-header.portfolio {
+  border-bottom: 1px solid #ececec;
 }
 
 .portfolio-card {
